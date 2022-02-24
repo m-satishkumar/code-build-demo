@@ -10,6 +10,8 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - aws --version
+      - echo node environment
+      - echo $NODE_ENV
   build:
     commands:
       - echo Build started on `date`
