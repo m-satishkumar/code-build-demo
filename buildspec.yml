@@ -12,9 +12,9 @@ phases:
       - aws --version
       - echo node environment
       - echo $NODE_ENV
-      - DB Username
+      - echo DB Username
       - echo $DB_USERNAME
-      - DB Password
+      - echo DB Password
       - echo $DB_PASSWORD
   build:
     commands:
