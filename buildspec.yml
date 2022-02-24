@@ -22,7 +22,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - aws s3 ls
-      - aws s3 ls s3://codebuild-demo-static-site-s3--recursive --human-readable --summarize
+      - aws s3 ls s3://codebuild-demo-static-site-s3 --recursive --human-readable --summarize
       - aws s3 sync build/ s3://codebuild-demo-static-site-s3 --acl public-read
 artifacts:
   files:
